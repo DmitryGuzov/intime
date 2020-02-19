@@ -1,0 +1,189 @@
+@media(max-width: 1320px){
+	.header-wrapper header,
+	.nav-wrapper nav,
+	.footer,
+	main,
+	.side-bar input,
+	.textarea-default{
+		width: 100%;
+	}
+	main{
+		padding: 0 20px;
+	}
+	.header-wrapper header,
+	.nav-wrapper nav{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.main-info{
+		width: 70%;
+	}
+	.main-info img,
+	article img,
+	.sec3 ul li img{
+		width: 100%;
+		height: auto;
+	}
+	.side-bar{
+		width: 25%;
+	}
+	.all-news,
+	.bt-send{
+		padding: 5px 10px;
+		font-size: 12px;	
+	}
+	.all-news span{
+		display: none;
+	}
+	.side-bar ul li:last-child article{
+		margin-bottom: 0;
+	}
+	.contact-us{
+		font-size: 20px;
+		margin-top: 40px;
+	}
+	.textarea-default{
+		margin-bottom: 14px;
+	}
+}
+@media(max-width: 990px){
+	.breadcrumb{
+		min-height: 60px;
+	}
+	h1{
+		font-size: 32px;
+		margin-bottom: 16px;
+		line-height: 38px;
+	}
+	.main-info,
+	.side-bar{
+		width: 100%;
+	}
+	section{
+		margin-bottom: 40px;
+	}
+	article img{
+		width: 100%;
+	}
+	.side-bar{
+		margin-bottom: 30px;
+	}
+	.footer{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		padding-top: 10px;				
+	}
+	.footer ul{
+		margin-bottom: 10px;
+	}
+	.tabs>label{
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+@media(max-width: 880px){
+	nav ul li a{
+		font-size: 14px;
+	}
+  .slicknav_menu {
+    display: block;
+    background: #f5f8fb;
+  }
+  .slicknav_nav a{
+    color: #465a64;
+  }
+  .nav-wrapper{
+    display: none;
+  }
+}
+
+/* Adaptive table */
+@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			/* position: absolute;
+			top: -9999px;
+			left: -9999px; */
+			display: none;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 60%; 	
+			width: auto;		
+			height: auto;
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 40%;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "Время"; font-weight: 500;}
+		td:nth-of-type(2):before { content: "Тестовое название"; font-weight: 500;}
+		td:nth-of-type(3):before { content: "Цвет"; font-weight: 500;}
+		td:nth-of-type(4):before { content: "Металл"; font-weight: 500;}
+		td:nth-of-type(5):before { content: "Ссылка"; font-weight: 500;}		
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+
+	@media(max-width:330px){
+		.header-wrapper{
+			height: auto;
+		}
+		header{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			height: auto;
+			padding-top: 0;
+		}
+		header span{
+			display: inline-block;
+			margin-bottom: 20px;
+
+		}
+		header ul{
+			display: block;
+		}
+	}
